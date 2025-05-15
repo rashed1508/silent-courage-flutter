@@ -1,5 +1,5 @@
 name: silent_courage
-description: A Flutter app for silent emergency alerts.
+description: A silent SOS alert app.
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-
+shared_preferences: ^2.0.15
 dev_dependencies:
   flutter_test:
     sdk: flutter
