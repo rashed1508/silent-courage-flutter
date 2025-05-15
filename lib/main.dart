@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'trusted_contacts_page.dart';
 
 void main() {
   runApp(SilentCourageApp());
@@ -45,3 +46,28 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+body: Center(
+  child: Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      ElevatedButton.icon(
+        icon: Icon(Icons.emergency),
+        label: Text('Silent SOS পাঠাও'),
+        onPressed: () {
+          // এখানে পরে SOS function বসানো হবে
+        },
+      ),
+      SizedBox(height: 16),
+      ElevatedButton.icon(
+        icon: Icon(Icons.contact_phone),
+        label: Text('Trusted Contacts'),
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => TrustedContactsPage()),
+          );
+        },
+      ),
+    ],
+  ),
+),
