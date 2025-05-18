@@ -11,7 +11,15 @@ class SilentCourageApp extends StatelessWidget {
     return MaterialApp(
       title: 'Silent Courage',
       theme: ThemeData(primarySwatch: Colors.deepPurple),
-      home: HomePage(),
+      home: import 'package:flutter/material.dart';
+import 'sos_page.dart';
+
+void main() {
+  runApp(MaterialApp(
+    home: SOSPage(),
+  ));
+}
+
       debugShowCheckedModeBanner: false,
     );
   }
