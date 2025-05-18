@@ -71,3 +71,8 @@ body: Center(
     ],
   ),
 ),
+// Drawer বা Home থেকে SOSPage-এ যাওয়ার জন্য:
+Navigator.push(
+  context,
+  MaterialPageRoute(builder: (context) => SOSPage()),
+);
