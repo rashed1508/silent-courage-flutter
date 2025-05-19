@@ -1,59 +1,28 @@
 name: silent_courage
-description: A Flutter app to silently alert trusted contacts.
-publish_to: "none"
+description: A safety app with SOS and trusted contacts functionality.
+publish_to: 'none'
 
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
+  sdk: ">=2.17.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-
-  # ব্যবহারকারী তথ্য সেভ রাখার জন্য
-  shared_preferences: ^2.2.2
-
-  # পারমিশন চাওয়ার জন্য (SMS, location, contacts)
-  permission_handler: ^11.0.1
-
-  # এসএমএস পাঠানোর জন্য
-  flutter_sms: ^2.3.2
-
-  # লোকেশন নেওয়ার জন্য (SOS এ কাজে লাগবে)
-  geolocator: ^10.1.0
-
-  # লিঙ্ক/ফোন নাম্বার চালু করার জন্য
+  cupertino_icons: ^1.0.2
+  geolocator: ^11.0.0
+  geocoding: ^2.1.0
   url_launcher: ^6.2.5
-
-  # আইকন/ইউআই-এর জন্য
-  cupertino_icons: ^1.0.6
+  permission_handler: ^11.3.0
+  shared_preferences: ^2.2.2
+  speech_to_text: ^6.5.1
+  flutter_tts: ^3.8.5
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  # কোড স্টাইল ঠিক রাখার জন্য
-  flutter_lints: ^2.0.1
+  flutter_lints: ^3.0.1
 
 flutter:
   uses-material-design: true
-
-  # ভবিষ্যতে ছবি বা অডিও ফাইল রাখলে এখানে যুক্ত হবে
-  assets:
-    - assets/images/
-    - assets/audio/
-
-dependencies:
-  flutter:
-    sdk: flutter
-  shared_preferences: ^2.2.2
-  permission_handler: ^11.3.1
-  geolocator: ^10.4.1
-  sms: ^0.2.4
-dependencies:
-  flutter:
-    sdk: flutter
-  url_launcher: ^6.2.5
-  shared_preferences: ^2.2.2
-
